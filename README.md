@@ -16,4 +16,3 @@ Example what can be used:
 - [form or data validation solution](https://www.npmjs.com/package/yup)
 - [resolver form+yup](https://www.npmjs.com/package/@hookform/resolvers)
 - [copy to clipboard](https://www.npmjs.com/package/copy-to-clipboard)
-- []

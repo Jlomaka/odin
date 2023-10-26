@@ -13,10 +13,11 @@ module.exports = {
     "eslint:recommended",
     "plugin:@typescript-eslint/recommended",
     "plugin:react-hooks/recommended",
+    "plugin:storybook/recommended"
   ],
   ignorePatterns: ["dist", ".eslintrc.cjs"],
   parser: "@typescript-eslint/parser",
-  plugins: ["react-refresh", "@typescript-eslint", "react", "react-hooks", "import"],
+  plugins: ["react-refresh", "@typescript-eslint", "react", "react-hooks"],
   rules: {
     "no-console": [1, {allow: ["warn", "error", "info"]}],
     "indent": [
@@ -53,21 +54,6 @@ module.exports = {
     "@typescript-eslint/no-unused-vars": 2,
     "@typescript-eslint/no-var-requires": 0,
     "@typescript-eslint/promise-function-async": 0,
-    "import/order": [
-      "error",
-      {
-        groups: [
-          "builtin",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "index",
-          "unknown",
-        ],
-        "newlines-between": "always",
-      },
-    ],
     "@typescript-eslint/no-shadow": [
       2
     ],

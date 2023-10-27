@@ -1,20 +1,20 @@
 import type {Meta, StoryObj} from "@storybook/react";
-import {Button} from "components/Button/Button.tsx";
+import {Select} from "components/Select/Select.tsx";
 
 const meta = {
-  title: "Example/Button",
-  component: Button,
+  title: "Example/Select",
+  component: Select,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof Select>;
 
 export default meta;
 type TStory = StoryObj<typeof meta>;
 
-export const DefaultButton: TStory = {
+export const DefaultInput: TStory = {
   args: {
-    children: "Primary"
+    label: "Select label"
   },
 };

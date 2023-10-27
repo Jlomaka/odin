@@ -1,25 +1,34 @@
-interface IProps {
-  primary?: boolean;
-  backgroundColor?: string;
-  label: string;
-  onClick?: () => void;
+import {ButtonHTMLAttributes, DetailedHTMLProps, ReactNode} from "react";
+import classNames from "classnames";
+
+type TButtonStyle = "primary" | "second" | "default" | "black";
+
+interface IProps extends Omit<DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement>, "children"> {
+  buttonStyle?: TButtonStyle;
+  children: string | ReactNode;
 }
 
-/**
- * Primary UI component for user interaction
- */
+const ButtonStyle: Record<TButtonStyle, string> = {
+  "primary": "bg-main text-white border-main hover:text-black hover:bg-white",
+  "second": "bg-second text-white border-second hover:text-black hover:bg-white",
+  "default": "bg-gray-600 text-white border-gray-600 hover:text-black hover:bg-white",
+  "black": "border-gray-800 hover:bg-gray-800 hover:text-white"
+};
+
 export const Button = ({
-  backgroundColor,
-  label,
+  buttonStyle = "default",
+  children,
+  type = "button",
+  className,
   ...props
 }: IProps) => {
   return (
     <button
-      type="button"
-      style={{backgroundColor}}
+      className={classNames("py-2 px-4 rounded-full border-2 border-solid ease-out duration-300", ButtonStyle[buttonStyle], className)}
+      type={type}
       {...props}
     >
-      {label}
+      {children}
     </button>
   );
 };

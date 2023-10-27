@@ -1,5 +1,6 @@
 module.exports = {
   root: true,
+  parser: "@typescript-eslint/parser",
   env: {browser: true, es2020: true},
   parserOptions: {
     sourceType: "module",
@@ -10,13 +11,9 @@ module.exports = {
     },
   },
   extends: [
-    "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:react-hooks/recommended",
     "plugin:storybook/recommended"
   ],
-  ignorePatterns: ["dist", ".eslintrc.cjs"],
-  parser: "@typescript-eslint/parser",
+  ignorePatterns: ["dist", ".eslintrc.cjs", "!**/*", "**/*.d.ts", "**/*.js", ".storybook"],
   plugins: ["react-refresh", "@typescript-eslint", "react", "react-hooks"],
   rules: {
     "no-console": [1, {allow: ["warn", "error", "info"]}],

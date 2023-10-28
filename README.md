@@ -25,7 +25,6 @@ Mailstone:
 - pagination (custom)
 - tabs (custom)
 - Google Maps (custom) ?? 
-- progress bar (custom)
 - checkbox (custom)
 - radio (custom)
 - icon (find better variante)

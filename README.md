@@ -22,7 +22,6 @@ Milestone:
 - pagination (custom)
 - tabs (custom)
 - Google Maps (custom) ??
-- radio (custom)
 - icon (find better variants)
 - accordions (custom) (like context) (special component for every accordion)
 - tabs (custom with url params) (like context) (special components for every tab)

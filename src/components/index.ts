@@ -8,3 +8,4 @@ export * from "./Switch/Switch.tsx";
 export * from "./ProgressBar/ProgressBar.tsx";
 export * from "./Textarea/Textarea.tsx";
 export * from "./Time/Time.tsx";
+export * from "./Checkbox/Checkbox.tsx";

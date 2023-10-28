@@ -6,10 +6,12 @@ interface IProps extends DetailedHTMLProps<TextareaHTMLAttributes<HTMLTextAreaEl
   label?: string;
 }
 
-export const Textarea = ({label, className = "", ...props}: IProps) => {
+export const Textarea = ({label, className = "", name, id, ...props}: IProps) => {
   return (
     <Label label={label}>
       <textarea
+        name={name}
+        id={id || name}
         className={classNames("h-40 rounded-lg py-2 px-4 border-2 border-solid border-gray-200 w-full outline-none placeholder:text-gray autofill:bg-transparent disabled:bg-gray-text-input/20", className)}
         {...props}
       />

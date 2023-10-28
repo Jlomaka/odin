@@ -8,6 +8,7 @@ interface IProps<Option = unknown, IsMulti extends boolean = false, Group extend
   label?: string;
 }
 
+// TODO add id to select
 export const Select = <Option = unknown, IsMulti extends boolean = false, Group extends GroupBase<Option> = GroupBase<Option>> ({
   label,
   ...props

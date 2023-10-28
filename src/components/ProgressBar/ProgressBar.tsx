@@ -7,13 +7,13 @@ interface IProps {
   value?: number;
 }
 
-export const ProgressBar = ({className, value = 0}: IProps) => {
+export const ProgressBar = ({className = "text-main", value = 0}: IProps) => {
   return (
     <div
       role="meter"
     >
       <svg
-        className={classNames("text-main", className)}
+        className={classNames(className)}
         style={{
           width: `${value > 100 ? 100 : value}%`,
           borderRadius: "12px",

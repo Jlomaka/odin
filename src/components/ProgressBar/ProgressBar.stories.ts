@@ -14,7 +14,11 @@ export default meta;
 type TStory = StoryObj<typeof meta>;
 
 export const DefaultProgressBar: TStory = {
+  args: {},
+};
+
+export const SecondProgressBar: TStory = {
   args: {
-    label: "Progress Bar"
+    className: "text-second"
   },
 };

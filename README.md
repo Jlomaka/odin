@@ -19,24 +19,17 @@ Example what can be used:
 
 Mailstone:
 
-- framework (react)
-- style plugin (tailwind)
 - form (react-hook-form) extra function
-- input (custom)
 - textarea (custom)
-- select (react-select)
-- data-picker (react-data-picker)
 - table (custom)
 - pagination (custom)
 - tabs (custom)
-- Google Maps (custom)
+- Google Maps (custom) ?? 
 - progress bar (custom)
-- toggle with true|false and nameing
 - checkbox (custom)
 - radio (custom)
 - icon (find better variante)
-- time (custom)
-- popup (custom)
+- time (custom) ?? 
 - accordions (custom) (like context) (special component for every accordion)
 - tabs (custom with url params) (like context) (special components for every tab)
 - step (custom)

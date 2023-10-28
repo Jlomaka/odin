@@ -4,7 +4,6 @@ import {Label} from "components/Label/Label.tsx";
 
 interface IProps extends DetailedHTMLProps<InputHTMLAttributes<HTMLInputElement>, HTMLInputElement> {
   label?: string;
-  placeholder?: string;
 }
 
 // TODO eye for password type

@@ -6,19 +6,18 @@ What under:
 - [tailwind](https://www.npmjs.com/package/tailwindcss)
 - [react-select](https://www.npmjs.com/package/react-select)
 - [react-datepicker](https://www.npmjs.com/package/react-datepicker)
+- [date-fns](https://www.npmjs.com/package/date-fns)
 
-Example what can be used:
+What can be used:
 
 - [icon solution](https://reactsvgicons.com/)
 - [form solution](https://www.npmjs.com/package/react-hook-form)
 - [form or data validation solution](https://www.npmjs.com/package/yup)
 - [resolver form+yup](https://www.npmjs.com/package/@hookform/resolvers)
 - [copy to clipboard](https://www.npmjs.com/package/copy-to-clipboard)
-- [date solution](https://www.npmjs.com/package/date-fns)
 
 Milestone:
 
-- textarea (custom)
 - table (custom)
 - pagination (custom)
 - tabs (custom)

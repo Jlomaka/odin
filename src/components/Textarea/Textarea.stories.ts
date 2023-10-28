@@ -1,20 +1,20 @@
 import type {Meta, StoryObj} from "@storybook/react";
-import {Input} from "components";
+import {Textarea} from "components";
 
 const meta = {
-  title: "Example/Input",
-  component: Input,
+  title: "Example/Textarea",
+  component: Textarea,
   parameters: {
     layout: "centered",
   },
   tags: ["autodocs"],
-} satisfies Meta<typeof Input>;
+} satisfies Meta<typeof Textarea>;
 
 export default meta;
 type TStory = StoryObj<typeof meta>;
 
-export const DefaultInput: TStory = {
+export const DefaultTextarea: TStory = {
   args: {
-    label: "First Name"
+    label: "Description"
   },
 };

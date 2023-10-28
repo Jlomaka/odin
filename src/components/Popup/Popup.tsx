@@ -2,6 +2,7 @@ import {Button} from "components";
 import {IconClose} from "icons";
 import {ReactNode, useCallback, useEffect, useRef, useState} from "react";
 import {createPortal} from "react-dom";
+import classNames from "classnames";
 
 interface IPortalProps {
   children: ReactNode;
@@ -21,12 +22,13 @@ export const ClientOnlyPortal = ({children, selector}: IPortalProps) => {
 };
 
 interface IProps {
+  className?: string;
   children: ReactNode;
   title?: string;
   onClose: () => void;
 }
 
-export const Popup = ({children, title, onClose}: IProps) => {
+export const Popup = ({className, children, title, onClose}: IProps) => {
   const body = document.body;
 
   const closeOnEscape = useCallback((e: KeyboardEvent) => {
@@ -48,7 +50,7 @@ export const Popup = ({children, title, onClose}: IProps) => {
   return (
     <ClientOnlyPortal selector="#popup">
       <div
-        className={"absolute z-50 inset-0 flex flex-col justify-center items-center w-auto h-auto overflow-hidden box-border"}
+        className={classNames("absolute z-50 inset-0 flex flex-col justify-center items-center w-auto h-auto overflow-hidden box-border", className)}
         aria-hidden={false}
       >
         <div

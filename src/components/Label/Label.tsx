@@ -1,7 +1,7 @@
-import React, {DetailedHTMLProps, InputHTMLAttributes} from "react";
+import React, {DetailedHTMLProps, LabelHTMLAttributes} from "react";
 import classNames from "classnames";
 
-interface IProps extends DetailedHTMLProps<InputHTMLAttributes<HTMLLabelElement>, HTMLLabelElement> {
+interface IProps extends DetailedHTMLProps<LabelHTMLAttributes<HTMLLabelElement>, HTMLLabelElement> {
   label?: string;
 }
 

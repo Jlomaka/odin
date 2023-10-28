@@ -10,3 +10,4 @@ export * from "./Textarea/Textarea.tsx";
 export * from "./Time/Time.tsx";
 export * from "./Checkbox/Checkbox.tsx";
 export * from "./Radio/Radio.tsx";
+export * from "./Menu/Menu.tsx";

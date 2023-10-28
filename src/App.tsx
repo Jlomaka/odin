@@ -1,9 +1,19 @@
-import {Button} from "components/Button/Button.tsx";
+import {Menu, MenuItem} from "components";
 
 function App () {
   return (
     <>
-      <Button>Some value</Button>
+      <Menu>
+        <MenuItem>
+          One button
+        </MenuItem>
+        <MenuItem>
+          Two button
+        </MenuItem>
+        <MenuItem>
+          Three button
+        </MenuItem>
+      </Menu>
     </>
   );
 }

@@ -1,6 +1,23 @@
-import {TabsProvider} from "components/Tabs/Tabs.provider.tsx";
+import {TabsProvider, useTabs} from "components/Tabs/Tabs.provider.tsx";
 import {Tab} from "components/Tabs/Tabs.tsx";
 import {TabContent} from "components/Tabs/TabContent.tsx";
+import {Button} from "components";
+
+const Tabb = () => {
+  const {setActiveTab} = useTabs();
+
+  return (
+    <TabContent value={"one"}>
+      Some one value
+
+      <Button
+        onClick={() => {
+          setActiveTab("three");
+        }}
+      >Change to tab 3</Button>
+    </TabContent>
+  );
+};
 
 function App () {
   return (
@@ -26,8 +43,12 @@ function App () {
             Four
           </Tab>
         </div>
-        <TabContent value={"one"}>
-          Some one value
+        <Tabb/>
+        <TabContent value={"two"}>
+          Some two value
+        </TabContent>
+        <TabContent value={"three"}>
+          Some three value
         </TabContent>
         <TabContent value={"four"}>
           Some four value

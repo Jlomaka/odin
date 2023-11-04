@@ -33,6 +33,7 @@ Milestone:
     - Base box + header + body component (custom)
     - contenteditable div block with some action button (custom or some solution)
     - alert (like error, warning, success or info block)
+- MODULE:
 - UTILS:
     - debounce
     - infinityScroll

@@ -23,8 +23,7 @@ Milestone:
     - pagination (custom)
     - accordions (custom) (like context) (special component for every accordion)
     - all input/select and other need add forwardRef for better UX
-    - tabs (custom with url params) (like context) (special components for every tab)
-    - tooltips
+    - tooltips (custom)
     - Google Maps (custom) ??
     - icon (find better variants)
     - step (custom)

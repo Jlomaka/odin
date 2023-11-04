@@ -1,4 +1,4 @@
-import React, {createContext, useContext, ReactNode, useState} from "react";
+import React, {createContext, useContext, ReactNode, useState, useEffect} from "react";
 
 interface IContext<Tabs extends string = ""> {
   activeTab: Tabs | string;
@@ -20,19 +20,29 @@ export function useTabs (): IContext {
   return data;
 }
 
-interface IProps {
+interface IProps<Tabs> {
+  value?: Tabs | string;
+  // TODO add next params event from action
+  onChange?: (value: Tabs | string) => void;
   children: ReactNode;
 }
 
 // TODO function to change URL when change tab
-export const TabsProvider = <Tabs extends string = ""> ({children}: IProps) => {
-  const [activeTab, setActiveTab] = useState<Tabs | string>("");
+export const TabsProvider = <Tabs extends string = ""> ({value, onChange, children}: IProps<Tabs>) => {
+  const [activeTab, setActiveTab] = useState<Tabs | string>(value || "");
+
+  useEffect(() => {
+    setActiveTab(value || "");
+  }, [value]);
 
   return (
     <Context.Provider
       value={{
         activeTab,
-        setActiveTab
+        setActiveTab: (newValue: Tabs | string) => {
+          onChange && onChange(newValue);
+          setActiveTab(newValue);
+        }
       }}
     >
       <div

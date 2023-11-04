@@ -18,18 +18,24 @@ What can be used:
 
 Milestone:
 
-- table (custom)
-- pagination (custom)
-- tabs (custom)
-- Google Maps (custom) ??
-- icon (find better variants)
-- accordions (custom) (like context) (special component for every accordion)
-- tabs (custom with url params) (like context) (special components for every tab)
-- step (custom)
-- tooltips (custom)
-- notification (custom or some solution)
-- input-file(custom)
-- Base box + header + body component (custom)
-- contenteditable div block with some action button (custom or some solution)
-- alert (like error, warning, success or info block)
-- special help hooks for react ??
+- COMPONENTS:
+    - table (custom)
+    - pagination (custom)
+    - accordions (custom) (like context) (special component for every accordion)
+    - all input/select and other need add forwardRef for better UX
+    - tabs (custom with url params) (like context) (special components for every tab)
+    - tooltips
+    - Google Maps (custom) ??
+    - icon (find better variants)
+    - step (custom)
+    - tooltips (custom)
+    - notification (custom or some solution)
+    - input-file(custom)
+    - Base box + header + body component (custom)
+    - contenteditable div block with some action button (custom or some solution)
+    - alert (like error, warning, success or info block)
+- UTILS:
+    - debounce
+    - infinityScroll
+    - pagination
+    - 

@@ -13,7 +13,7 @@ interface IProps {
   children: ReactNode;
 }
 
-// TODO custom button
+// TODO add props to add custom menu icon
 export const Menu = ({className, state = false, disabled, children}: IProps) => {
   const [isOpen, setIsOpen] = useState<boolean>(false);
 

@@ -5,7 +5,7 @@
 }
 
 [role="switch"] .switch {
-  @apply border-gray-600 border-2 border-solid rounded-full cursor-pointer;
+  @apply rounded-full cursor-pointer bg-main/30;
   position: relative;
   display: inline-block;
   top: 6px;
@@ -14,46 +14,37 @@
 }
 
 [role="switch"] .switch span {
-  @apply bg-gray-600 border-gray-600 cursor-pointer;
+  @apply bg-white border-white cursor-pointer;
   position: absolute;
-  top: -1px;
-  right: calc(100% - 18px);
+  top: 3px;
+  right: calc(100% - 16px);
   display: inline-block;
   border-radius: 8px;
-  height: 18px;
-  width: 18px;
+  height: 14px;
+  width: 14px;
   transition: all ease-out 300ms;
 }
 
 [role="switch"][aria-checked="true"] .switch {
-  @apply border-success;
+  @apply bg-main border-main;
 }
 
 [role="switch"][aria-checked="true"] .switch span {
-  @apply bg-success border-success;
   left: initial;
-  right: 0;
+  right: 2px;
 }
 
 [role="switch"]:focus,
 [role="switch"]:hover {
-  @apply border-gray-200 bg-gray-100;
+  @apply border-gray-200;
   outline: none;
   cursor: pointer;
 }
 
-[role="switch"]:focus span.switch {
-  background-color: white;
-}
-
 [role="switch"][aria-disabled="true"] .switch {
-  @apply border-gray-600/50 opacity-50;
+  @apply bg-gray-600/30;
 }
 
 [role="switch"][aria-checked="true"][aria-disabled="true"] .switch {
-  @apply border-success/50 opacity-50;
-}
-
-[role="switch"][aria-disabled="true"] .switch span {
-  @apply opacity-50;
+  @apply bg-gray-600/30;
 }

@@ -1,16 +1,22 @@
 {
   "name": "odin",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.5.0",
+  "main": "dist/odin.mjs",
+  "types": "dist/main.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "start": "vite",
-    "build": "tsc && vite build",
+    "build": "tsc --p ./tsconfig-build.json && vite build",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "prepublishOnly": "npm run build"
   },
-  "dependencies": {
+  "peerDependencies": {
     "autoprefixer": "^10.4.16",
     "classnames": "^2.3.2",
     "date-fns": "^2.30.0",
@@ -50,6 +56,7 @@
     "storybook": "^7.5.1",
     "typescript": "^5.2.2",
     "vite": "^4.5.0",
+    "vite-plugin-dts": "^3.6.3",
     "vite-tsconfig-paths": "^4.2.1"
   },
   "browserslist": {
